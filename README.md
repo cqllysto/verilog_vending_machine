@@ -1,24 +1,17 @@
-Hayashi, David and Wright, Aidan
-
 Department of Engineering, ORU
-
 CMPE 340: Digital Systems Design
-
 Dr. Xiaomin Ma
-
 April 4, 2023
 
 # Project Description
-
-# Computers are ubiquitous in modern society, yet often taken for granted. They power a wide range of devices, from personal computers to cell phones to vending machines. This last type of machine is the focus of a recent project, which involved designing a simple vending machine. The machine is designed to take inputs in the form of nickels and dimes, and once a certain amount of money has been inserted (equivalent to fifteen cents), it will output candy. If more money than necessary has been inserted, the machine will also provide change. Such vending machines are useful for anyone looking to sell goods ranging from snacks to clothing.
-
-# The project had specific requirements, including the use of only nickel and dime inputs (represented by two switches on a breadboard), and the output of candy when the circuit received a total of fifteen cents. If more than fifteen cents were inserted, the machine would also provide change. The machine was created using a combination of Moore machines, D-flipflops, and OR and AND gates.
+The purpose of this project is the design of the hardware for a very simple vending machine. The machine is designed to take inputs in the form of nickels and dimes. Once a certain amount of money has been inserted (equivalent to fifteen cents), it will output candy. If more money than necessary has been inserted, the machine will also provide change. 
+The project had specific requirements, including the use of only nickel and dime inputs (represented by two switches on an FPGA), and the output of candy when the circuit received a total of fifteen cents. If more than fifteen cents were inserted, the machine would also provide change. The machine was created using a combination of Moore machines amd D-flipflops, as well as OR and AND gates.
 
 # Design and Approaches
 
-# When the project was assigned, two options for implementing the circuit were presented: Mealy or Moore machines. Each have its own advantages and disadvantages. The Mealy Machine is faster, but since it changes based on state transition, it is prone to errors when the state is unstable. In contrast, the Moore Machine is slower but more consistent, as it only changes based on the current state. Due to the complexity of the circuit, the Moore Machine was chosen to ensure stability.
+When the project was assigned, two options for implementing the circuit were presented: Mealy or Moore machines. Each have its own advantages and disadvantages. The Mealy Machine is faster, but since it changes based on state transition, it is prone to errors when the state is unstable. In contrast, the Moore Machine is slower but more consistent, as it only changes based on the current state. Due to the complexity of the circuit, the Moore Machine was chosen to ensure stability.
 
-# The circuit has several different states based on the inputs, such as a nickel or a dime. Even within the fifteen-cent range specified for the project, there are many states that need to be covered. These states are represented by LEDs on the breadboard. When a dime is inserted, a certain state is represented by an LED lit to represent a one or zero value. When a coins are inserted, the LED reflects a value of zero or one, with each input adding a different value until the correct state is reached, indicated by the LED for candy output lighting up.
+The circuit has several different states based on the inputs, such as a nickel or a dime. Even within the fifteen-cent range specified for the project, there are many states that need to be covered. These states are represented by LEDs on the breadboard. When a dime is inserted, a certain state is represented by an LED lit to represent a one or zero value. When a coins are inserted, the LED reflects a value of zero or one, with each input adding a different value until the correct state is reached, indicated by the LED for candy output lighting up.
 
 # FSM Derivations, Truth Table, and K-Maps
 
