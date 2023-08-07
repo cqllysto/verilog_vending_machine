@@ -16,7 +16,7 @@ The circuit has several different states based on the inputs, such as a nickel o
 
 <span class="underline">State Transition Diagram</span>
 
-![State Transition Diagram](State_Transition_Diagram.png)
+![State Transition Diagram](diagrams/State_Transition_Diagram.png)
 
 <span class="underline"></span>
 # Truth Table
