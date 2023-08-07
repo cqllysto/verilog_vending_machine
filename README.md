@@ -17,9 +17,10 @@ The circuit has several different states based on the inputs, such as a nickel o
 
 <span class="underline">State Transition Diagram</span>
 
-![Diagram Description automatically generated](media/image1.png)
+![State Transition Diagram](State_Transition_Diagram.png)
 
-<span class="underline">Truth Table</span>
+<span class="underline"></span>
+# Truth Table
 
 | **<span class="underline">Nickel</span>** | **<span class="underline">Dime</span>** | **<span class="underline">Q<sub>A</sub></span>** | **<span class="underline">Q<sub>B</sub></span>** | **<span class="underline">Q<sub>C</sub></span>** | **<span class="underline">Q<sub>A</sub>­<sup>+</sup></span>** | **<span class="underline">Q<sub>B</sub>­<sup>+</sup></span>** | **<span class="underline">Q<sub>C</sub>­<sup>+</sup></span>** | **<span class="underline">Z</span>** | **<span class="underline">Change</span>** |
 | ----------------------------------------- | --------------------------------------- | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------ | ----------------------------------------- |
@@ -57,41 +58,42 @@ The circuit has several different states based on the inputs, such as a nickel o
 | 1                                         | 1                                       | 1                                                | 1                                                | 0                                                | X                                                             | X                                                             | X                                                             | X                                    | X                                         |
 | 1                                         | 1                                       | 1                                                | 1                                                | 1                                                | X                                                             | X                                                             | X                                                             | X                                    | X                                         |
 
-<span class="underline">K-Maps</span>
+<span class="underline"></span>
+# K-Maps
 
 From the truth table, the following K-maps were derived:
 
 1.  **Q<sub>A</sub>­<sup>+</sup>**
 
-> ![Calendar Description automatically generated](media/image2.png)
+> ![](Qa.png)
 > 
 > Q<sub>A</sub>­<sup>+</sup> = A + BD + BCE
 
 2.  **Q<sub>B</sub>­<sup>+</sup>**
 
 > ![A picture containing calendar Description automatically
-> generated](media/image3.png)
+> generated](Qb.png)
 > 
 > Q<sub>B</sub>­<sup>+</sup> = BC'D' + A'B'C'D + B'C'DE' + AC'D'E
 
 3.  **Q<sub>C</sub><sup>+</sup>**
 
 > ![A picture containing calendar Description automatically
-> generated](media/image4.png)
+> generated](Qc.png)
 > 
 > Q<sub>C</sub><sup>+­</sup> = AC'E' + A'B'C'E + A'C'D'E
 
 4.  **Z**
 
 > ![A picture containing calendar Description automatically
-> generated](media/image5.png)
+> generated](Z.png)
 > 
 > Z = C + DE
 
 5.  **Change**
 
 > ![A picture containing calendar Description automatically
-> generated](media/image6.png)
+> generated](Change.png)
 > 
 > Change = C
 
@@ -99,11 +101,11 @@ From the truth table, the following K-maps were derived:
 
 ## Design Constraints
 
-## As previously mentioned, this circuit had multiple constraints. The first was the need for a nickel input, and the second was the need for a separate dime input. These constraints were critical, and a Moore Machine was designed to meet them. The machine required three D-flipflops, three 4-input AND gates, a 3-input AND gate, a 2-input AND gate, and two 3-input OR gates, in accordance with the constraints of the machine being built.
+As previously mentioned, this circuit had multiple constraints. The first was the need for a nickel input, and the second was the need for a separate dime input. These constraints were critical, and a Moore Machine was designed to meet them. The machine required three D-flipflops, three 4-input AND gates, a 3-input AND gate, a 2-input AND gate, and two 3-input OR gates, in accordance with the constraints of the machine being built.
 
 ## Testing
 
-# The circuit initially produced incorrect results despite having implemented the diagram, wiring, and chips as intended. Several instances of incorrect states were observed, including the system working only for the first rising edge, but changing to a completely wrong state upon the second rising edge. Testing revealed that the D-flipflop was the culprit, outputting wrong values for the state. Replacing it with a different D-flipflop did not solve the problem, so the circuit was tested without the flipflops to confirm that the problem was related to them. The circuit was correct without the flipflops, so it was apparent that they were the issue. Testing two new D-flipflops before implementing them into the circuit showed that they were functional, but they output the wrong states once they were connected. After thorough troubleshooting, it was determined that the clock was the issue. As a mechanical switch was being used to manually control the clock, it came to light the switch bounced when it was flipped, causing the clock to undergo several rising and falling edges extremely fast. It was resolved by replacing the switch clock with an onboard clock that oscillated automatically. With this problem solved, the project was finally completed to meet the initial conditions and produce the desired results.
+The circuit initially produced incorrect results despite having implemented the diagram, wiring, and chips as intended. Several instances of incorrect states were observed, including the system working only for the first rising edge, but changing to a completely wrong state upon the second rising edge. Testing revealed that the D-flipflop was the culprit, outputting wrong values for the state. Replacing it with a different D-flipflop did not solve the problem, so the circuit was tested without the flipflops to confirm that the problem was related to them. The circuit was correct without the flipflops, so it was apparent that they were the issue. Testing two new D-flipflops before implementing them into the circuit showed that they were functional, but they output the wrong states once they were connected. After thorough troubleshooting, it was determined that the clock was the issue. As a mechanical switch was being used to manually control the clock, it came to light the switch bounced when it was flipped, causing the clock to undergo several rising and falling edges extremely fast. It was resolved by replacing the switch clock with an onboard clock that oscillated automatically. With this problem solved, the project was finally completed to meet the initial conditions and produce the desired results.
 
 # Summary
 
@@ -121,8 +123,3 @@ The biggest benefit of this project was the opportunity to learn how to
 design a digital system from initial concept to gate level hardware.
 Topics such as finite state machines, flip-flops, and K-maps were
 cemented in the learning process by completing this project.
-
-Special thanks are due to Professor Dr. Ma, who provided helpful
-guidance in troubleshooting the circuit and ultimately identified the
-clock as the potential issue, which was confirmed after testing the
-circuit.
