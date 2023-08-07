@@ -64,35 +64,35 @@ From the truth table, the following K-maps were derived:
 
 1.  **Q<sub>A</sub>­<sup>+</sup>**
 
-> ![](Qa.png)
+> ![](diagrams/Qa.png)
 > 
 > Q<sub>A</sub>­<sup>+</sup> = A + BD + BCE
 
 2.  **Q<sub>B</sub>­<sup>+</sup>**
 
 > ![A picture containing calendar Description automatically
-> generated](Qb.png)
+> generated](diagrams/Qb.png)
 > 
 > Q<sub>B</sub>­<sup>+</sup> = BC'D' + A'B'C'D + B'C'DE' + AC'D'E
 
 3.  **Q<sub>C</sub><sup>+</sup>**
 
 > ![A picture containing calendar Description automatically
-> generated](Qc.png)
+> generated](diagrams/Qc.png)
 > 
 > Q<sub>C</sub><sup>+­</sup> = AC'E' + A'B'C'E + A'C'D'E
 
 4.  **Z**
 
 > ![A picture containing calendar Description automatically
-> generated](Z.png)
+> generated](diagrams/Z.png)
 > 
 > Z = C + DE
 
 5.  **Change**
 
 > ![A picture containing calendar Description automatically
-> generated](Change.png)
+> generated](diagrams/Change.png)
 > 
 > Change = C
 
