@@ -1,7 +1,6 @@
 Department of Engineering, ORU
 CMPE 340: Digital Systems Design
-Dr. Xiaomin Ma
-April 4, 2023
+
 
 # Project Description
 The purpose of this project is the design of the hardware for a very simple vending machine. The machine is designed to take inputs in the form of nickels and dimes. Once a certain amount of money has been inserted (equivalent to fifteen cents), it will output candy. If more money than necessary has been inserted, the machine will also provide change. 
