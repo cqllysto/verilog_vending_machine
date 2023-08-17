@@ -12,7 +12,7 @@ When the project was assigned, two options for implementing the circuit were pre
 The circuit has several different states based on the inputs, such as a nickel or a dime. Even within the fifteen-cent range specified for the project, there are many states that need to be covered. These states are represented by LEDs on the breadboard. When a dime is inserted, a certain state is represented by an LED lit to represent a one or zero value. When a coins are inserted, the LED reflects a value of zero or one, with each input adding a different value until the correct state is reached, indicated by the LED for candy output lighting up.
 # FSM Derivations, Truth Table, and K-Maps
 <span class="underline">State Transition Diagram</span>
-![State Transition Diagram](State_Transition_Diagram.png)
+![State Transition Diagram](diagrams/State_Transition_Diagram.png)
 <span class="underline"></span>
 # Truth Table
 | **<span class="underline">Nickel</span>** | **<span class="underline">Dime</span>** | **<span class="underline">Q<sub>A</sub></span>** | **<span class="underline">Q<sub>B</sub></span>** | **<span class="underline">Q<sub>C</sub></span>** | **<span class="underline">Q<sub>A</sub>­<sup>+</sup></span>** | **<span class="underline">Q<sub>B</sub>­<sup>+</sup></span>** | **<span class="underline">Q<sub>C</sub>­<sup>+</sup></span>** | **<span class="underline">Z</span>** | **<span class="underline">Change</span>** |
@@ -54,27 +54,27 @@ The circuit has several different states based on the inputs, such as a nickel o
 # K-Maps
 From the truth table, the following K-maps were derived:
 1.  **Q<sub>A</sub>­<sup>+</sup>**
-> ![](Qa.png)
+> ![](diagrams/Qa.png)
 > 
 > Q<sub>A</sub>­<sup>+</sup> = A + BD + BCE
 2.  **Q<sub>B</sub>­<sup>+</sup>**
 > ![A picture containing calendar Description automatically
-> generated](Qb.png)
+> generated](diagrams/Qb.png)
 > 
 > Q<sub>B</sub>­<sup>+</sup> = BC'D' + A'B'C'D + B'C'DE' + AC'D'E
 3.  **Q<sub>C</sub><sup>+</sup>**
 > ![A picture containing calendar Description automatically
-> generated](Qc.png)
+> generated](diagrams/Qc.png)
 > 
 > Q<sub>C</sub><sup>+­</sup> = AC'E' + A'B'C'E + A'C'D'E
 4.  **Z**
 > ![A picture containing calendar Description automatically
-> generated](Z.png)
+> generated](diagrams/Z.png)
 > 
 > Z = C + DE
 5.  **Change**
 > ![A picture containing calendar Description automatically
-> generated](Change.png)
+> generated](diagrams/Change.png)
 > 
 > Change = C
 # Circuit Implementation and Results
