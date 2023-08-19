@@ -62,7 +62,7 @@ From the truth table, the following K-maps were derived:
 > ![A picture containing calendar Description automatically
 > generated](diagrams/Qb.png)
 > 
-> Q<sub>B</sub>­<sup>+</sup> = BC'D' + A'B'C'D + B'C'DE' + AC'D'E
+> Q<sub>B</sub>­<sup>+</sup> = AC'D' + A'B'C'D + A'C'DE' + BC'D'E
 3.  **Q<sub>C</sub><sup>+</sup>**
 > ![A picture containing calendar Description automatically
 > generated](diagrams/Qc.png)
