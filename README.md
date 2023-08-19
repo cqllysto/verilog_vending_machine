@@ -79,6 +79,10 @@ From the truth table, the following K-maps were derived:
 > 
 > Change = C
 # Circuit Implementation and Results
+## Logisim Circuit
+![A picture containing calendar Description automatically
+> generated](diagrams/logisim_circuit.png)
+
 ## Design Constraints
 As previously mentioned, this circuit had multiple constraints. The first was the need for a nickel input, and the second was the need for a separate dime input. These constraints were critical, and a Moore Machine was designed to meet them. The machine required three D-flipflops, three 4-input AND gates, a 3-input AND gate, a 2-input AND gate, and two 3-input OR gates, in accordance with the constraints of the machine being built.
 ## Testing
